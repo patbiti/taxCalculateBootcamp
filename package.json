@@ -1,3 +1,13 @@
 {
-  "name" : "taxCalBootcamp"
+	"name" : "taxCalBootcamp",
+	"version": "0.0.1",
+	"description": "YUI 3 Source",
+	"author": "patbiti <pat.biti@gmail.com>",
+	"bugs": { "url" : "https://github.com/yui/yui3/issues" },
+	"dependencies": {
+	    "argsparser": "0.0.6"
+	},
+	"bin" : {
+		"taxCalBootcamp" : "./index.js"
+	}
 }
