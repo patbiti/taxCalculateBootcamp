@@ -1,13 +1,14 @@
 {
+
 	"name" : "taxCalBC",
 	"version": "0.0.1",
 	"description": "bootcamp作业",
 	"author": "patbiti <pat.biti@gmail.com>",
-	"bugs": { "url" : "https://github.com/yui/yui3/issues" },
+	"bugs": { "url" : "https://github.com/patbiti/taxCalculateBootcamp/issues" },
 	"dependencies": {
 	    "argsparser": "0.0.6"
 	},
 	"bin" : {
-		"taxCalBootcamp" : "./index.js"
+		"taxCalBC" : "./index.js"
 	}
 }
