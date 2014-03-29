@@ -1,3 +1,14 @@
 {
-  "name" : "taxCalBootcamp"
+
+	"name" : "calTaxBC",
+	"version": "0.0.1",
+	"description": "bootcamp作业",
+	"author": "patbiti <pat.biti@gmail.com>",
+	"bugs": { "url" : "https://github.com/patbiti/taxCalculateBootcamp/issues" },
+	"dependencies": {
+	    "argsparser": "0.0.6"
+	},
+	"bin" : {
+		"calTaxBC" : "./index.js"
+	}
 }
