@@ -1,7 +1,7 @@
 var readCfg = require('./utils/readConfig.js'),
 	calTaxFee = require('./utils/calTaxFee.js'),
 	argsparser = require('argsparser'),
-	feeCfg, cityCfg, input, incomeInput, cityInput, taxFee, citys;
+	feeCfg, cityCfg, input, incomeInput, cityInput, citys, tax;
 
 feeCfg = readCfg(__dirname + '/config/fee.json');
 cityCfg = readCfg(__dirname + '/config/city.json');
@@ -30,5 +30,5 @@ if(incomeInput === '' || incomeInput === null || isNaN(incomeInput)){
 	console.error('请输入正确薪水值');
 	return ;
 }
-feeTax = calTaxFee.cal(incomeInput, feeCfg[cityInput]);
-console.log('您应该缴纳的个人所得税应为：' + feeTax);
+tax = calTaxFee.cal(incomeInput, feeCfg[cityInput]);
+console.log('您应该缴纳的个人所得税应为：' + tax.tax + ',基于' + tax.base + '的基准值。');
